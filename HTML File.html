@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function ValidateIndianMob()
+                             {
+    var mob=document.getElementById("btn").value
+    var reg=/^([+]91[-])?[6-9]{1}[0-9]{9}$/
+
+    if(mob.match(reg)==null)
+    {
+    alert("Invalid Mobile No.")
+    }
+    else
+    {
+    alert("Valid Mobile No.")
+    }
+                                 }
+</script>
+
+Mobile:<input type=" text" id="btn"  >
+<input type="submit" id="btn2" value="ValidateMobNo." onclick="ValidateIndianMob()">
+
+</body>
+</html>
